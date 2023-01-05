@@ -7,6 +7,6 @@
 /// Pacote empresarial com o objetivo de componentizar e organizar os aplicativos do grupo Podi.
 library ds_podi;
 
-export 'src/utils.dart';
 export 'podi_services.dart';
 export 'podi_widgets.dart';
+export 'podi_utils.dart';
