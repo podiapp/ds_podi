@@ -2,10 +2,8 @@
 ///
 /// Encarregado de Dados: Podi Pagamentos Digitais LTDA | atendimento@podiapp.com.br
 ///
-/// Podi Design System
-///
-/// Pacote empresarial com o objetivo de componentizar e organizar os aplicativos do grupo Podi.
-library ds_podi;
+/// Serviços relacionados ao grupo de aplicativos do Podi
+library podi_service;
 
-export 'podi_services.dart';
-export 'podi_widgets.dart';
+export 'src/services/http.service.dart';
+export 'src/services/navigation.service.dart';
