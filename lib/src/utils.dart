@@ -6,8 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 export 'package:validators/validators.dart';
 export 'package:dio/dio.dart';
-// export 'formatters/money_input_formatter.dart';
-// export 'formatters/upper_case_text_formatter.dart';
+export 'formatters/money_input_formatter.dart';
+export 'formatters/upper_case_text_formatter.dart';
 
 part 'utils/icons.dart';
 part 'utils/colors.dart';
