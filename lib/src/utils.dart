@@ -9,6 +9,7 @@ export 'package:dio/dio.dart';
 export 'formatters/money_input_formatter.dart';
 export 'formatters/upper_case_text_formatter.dart';
 
+part 'utils/api_constants.dart';
 part 'utils/icons.dart';
 part 'utils/colors.dart';
 part 'utils/logger.dart';
