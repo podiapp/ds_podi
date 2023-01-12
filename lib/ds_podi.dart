@@ -10,3 +10,4 @@ library ds_podi;
 export 'podi_services.dart';
 export 'podi_widgets.dart';
 export 'podi_utils.dart';
+export 'podi_models.dart';
