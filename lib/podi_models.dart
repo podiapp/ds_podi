@@ -6,3 +6,4 @@
 library podi_models;
 
 export 'src/model/shopping.model.dart';
+export 'src/model/dropped_file_model.dart';
