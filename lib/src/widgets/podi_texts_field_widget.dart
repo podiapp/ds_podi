@@ -10,6 +10,7 @@ class PodiTextFormField extends StatefulWidget {
   final double radius;
   final double height;
   final double? width;
+  final int? maxLines;
   final String? label;
   final String? helper;
   final String? initialValue;
@@ -31,6 +32,7 @@ class PodiTextFormField extends StatefulWidget {
   const PodiTextFormField({
     this.radius = 4,
     this.height = 40,
+    this.maxLines,
     this.width,
     this.initialValue,
     this.label,
@@ -63,6 +65,7 @@ class _PodiTextFormFieldState extends State<PodiTextFormField> {
   late double _radius;
   late double _height;
   late double? _width;
+  late int? _maxLines;
   late String? _label;
   late String? _helper;
   late String? _initialValue;
@@ -127,6 +130,7 @@ class _PodiTextFormFieldState extends State<PodiTextFormField> {
     _onTap = widget.onTap;
     _focusNode = widget.focusNode;
     _readOnly = widget.readOnly;
+    _maxLines = widget.maxLines;
     if (_isDate && !isNull(_initialValue)) {
       _dateController.text = _initialValue ?? "";
     }
@@ -216,6 +220,7 @@ class _PodiTextFormFieldState extends State<PodiTextFormField> {
 
     return TextFormField(
       focusNode: _focusNode,
+      maxLines: _maxLines,
       initialValue:
           !(_isDate || _isHour || _controller != null) ? _initialValue : null,
       controller: (_isDate)
