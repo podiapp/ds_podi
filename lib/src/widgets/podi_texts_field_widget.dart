@@ -271,7 +271,8 @@ class _PodiTextFormFieldState extends State<PodiTextFormField> {
           borderSide: BorderSide(color: PodiColors.neutrals[200]!),
           borderRadius: BorderRadius.circular(_radius),
         ),
-        contentPadding: const EdgeInsets.only(left: 12),
+        contentPadding:
+            (_maxLines == null) ? const EdgeInsets.only(left: 12) : null,
         label: _buildLabel(),
         helperText: _helper,
         helperStyle: PodiTexts.label3,
