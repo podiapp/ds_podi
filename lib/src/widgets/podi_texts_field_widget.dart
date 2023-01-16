@@ -282,9 +282,11 @@ class _PodiTextFormFieldState extends State<PodiTextFormField> {
 
   Widget _buildBox(Widget child) {
     return SizedBox(
-      height: (isError || !isNull(_helper))
-          ? _height + getTextSize(' ', PodiTexts.label3).height + 8
-          : _height,
+      height: (_maxLines != null)
+          ? null
+          : (isError || !isNull(_helper))
+              ? _height + getTextSize(' ', PodiTexts.label3).height + 8
+              : _height,
       width: _width,
       child: child,
     );
