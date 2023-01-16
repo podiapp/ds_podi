@@ -11,3 +11,5 @@ export 'src/widgets/podi_texts_field_widget.dart';
 export 'src/widgets/podi_button_widget.dart';
 export 'src/widgets/snackbar_widget.dart';
 export 'src/widgets/steps_widget.dart';
+export 'src/widgets/table_widget.dart';
+export 'src/widgets/dropzone_widget.dart';
